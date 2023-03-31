@@ -1,0 +1,124 @@
+        <!DOCTYPE html> <!-esta siempre tiene que esta porque indicamos que es un documentos tipo HTML->
+        <html lang="en"> <!-Estructura-><!-y eleccion de idioma en este caso "es" de espanol->
+            
+        <head><!-Encabezado->
+                
+            <meta charset="utf-8"><!-Con este indicamos la codificacion en la que estamos trabajando->
+                
+                <title>
+                    Carlos Perez Perez - Tarea de pagina web - curso Programacion II - UH</title><!-Esto se muestra en el tab de nuestra pagina->
+                    
+                    <!-primero declaramos el link esterno que sera una pagina de estilos & luego indicamos cual es el archivo de estilos-> 
+                    <link rel="stylesheet" href="estilos.css">
+
+                    <!-enlace de la fuente que hace referencia a las fuentes de google y este estilo se llama "Poppins"->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+                
+                </head>
+                
+                <body>
+                    <header>
+                        <div class="contenedor">
+                <div class="menu"><!-Eiqueta se usa para contener elementos y ser manipulados despues->
+                    <!-Eiqueta para parrafos->
+                    <p>CARLOS PEREZ PEREZ</p>
+
+                        <!-Eiqueta para navegacion->
+                        <nav>
+                            <!-Eiqueta para lista desordenadas (automaticamente le pone un punto por delante->
+                            <ul class="lista">
+                                <!-Etiqueta para elementos de la lista->
+                                <!-Etiqueta  para elementos de la lista->
+                                    <!-Etiqueta para separar cada linea y asi poder modificarla desde CSS y se puede retulizar->
+                                    <li id="primero"> Sobre mi </li> <!-Etiqueta  para separar cada linea y asi poder modificarla desde CSS y se puede retulizar->
+                                    <li> Servicios </li>
+                                    <li> Mis trabajos </li>
+                                    <li> Por que trabajar conmigo? </li>
+                                    <li class="ultimo"> Blog </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-Creamos otro div para el titular y podemos usar desde h1 hasta h6 en orden de mas grande a mas pequeno->
+                    <div class="titular">
+                        <!-Podemos usar desde h1 hasta h6 = de mas grande a mas chico->
+                        <!-Titulo->
+                        <h1> CARLOS PEREZ PEREZ</h1>
+
+                        <!-Subtitulo->
+                        <h2> Disenador & Desarrollador Web</h2>
+                        <!-Etiqueta para botones y agregamos href para que sea cliqueable y para que se habra en una nueva pestana agregramos el atributo target->
+                        <a href="https://www.google.com" target="_blank"> VER MIS TRABAJOS</a>
+                    </div>
+                </div>
+                </header>
+
+                    <!-indicamos que tendremos una seccion nueva->
+                        <section>
+                            <h3>Sobre mi</h3>
+                            <div class="contenedor-sobremi">
+                            <img src="recursos_pagina/me.jpg" alt="Carlos Perez Perez" title="Carlos Perez Perez">
+                                <div class="contenedor-parrafo-y-boton">
+                                <p>
+                                        Operational monitoring and maintenance of devices Cisco, Juniper, Huawei IP and Transmission.
+                                        A good understanding of technologies and networking.</p>
+                                        <p>Strong knowledge and ability to solve the trouble in L2 and L3 and more.</p>
+                                        <p class="parrafo-final">High-level knowledge integrating cell technologies like GSM, WCDMA, LTE Carriers, and transmission microwave.
+                                        High-level knowledge Operational monitoring and maintenance of implementing a secure enterprise network, with the implemented advance of OSPF, EIGRP, BGP, IS-IS, VPN, IP services, IPv4, and IPV6, Spanning-Tree, TCP, PAT, NAT, DHCP, SSH, LACP, VLAN, VXLAN, DMVPN, BGP-VPNv4, L3VPN, VRF, PPP, GRE, IPsec, ACL, HSRP, 802.1Q.</p>
+                                        High-level knowledge about technologies concepts as Wireless, Multicast, QoS, Antennas allows to pair with WLCs, and purposes and characteristics of virtualization and automation in an enterprise network.
+                                        Understanding of system architecture, Linux installation, and package management, GNU and Unix Commands, Devices, Linux filesystems, filesystem hierarchy standard, shell and shell scripting, interface, and desktops, administrative tasks, essential system services, networking fundamentals, and security.
+                                
+                                    </p>
+                                    <a> VER MIS TRABAJOS</a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            
+                                <h3>Servicios</h3>
+<!--bloque 1-->
+                                <div class="contenedor-servicios">
+                                    <!-podemos tener mas de una clase, pero debemos separarlas por un espacio ejemplo "servicio violeta"->
+                                <div class="servicio violeta">
+                                    <h4>Diseno Web</h4>
+                                    <p>Paginas atractivas y de excelente Diseno</p>
+                                    <img src="/recursos_pagina/monitor.png">
+                                </div>
+
+<!--bloque 2-->                                
+                                <div class="servicio celeste">
+                                    <h4>Responsive Design</h4>
+                                    <p>Paginas atractivas y de excelente Diseno</p>
+                                    <img src="/recursos_pagina/monitor.png">
+                                </div>
+<!--bloque 3-->                                
+                                <div class="servicio violeta">
+                                    <h4>SEO</h4>
+                                    <p>Paginas atractivas y de excelente Diseno</p>
+                                    <img src="/recursos_pagina/monitor.png">
+                                </div>
+<!--bloque 4-->                    
+                                <div class="servicio celeste">
+                                    <h4>Autoadministrable</h4>
+                                    <p>Paginas atractivas y de excelente Diseno</p>
+                                    <img src="/recursos_pagina/monitor.png">
+                                </div>
+<!-bloque 5-->                    
+                                <div class="servicio violeta">
+                                    <h4>Mantenimiento</h4>
+                                    <p>Paginas atractivas y de excelente Diseno</p>
+                                    <img src="/recursos_pagina/monitor.png">
+                                </div>
+<!-bloque 6->                    
+                                <div class="servicio celeste">
+                                    <h4>Marketing Digital</h4>
+                                    <p>Paginas atractivas y de excelente Diseno</p>
+                                    <img src="/recursos_pagina/monitor.png">
+                                </div>
+                            </div>
+                            
+                        </section>
+                </body>
+        </html>

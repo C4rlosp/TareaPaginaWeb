@@ -1,0 +1,139 @@
+/*Elemento*/
+body {
+    /*Propiedad
+    background: red;*/
+    /*usamos la propiedad font-family, llamamos el estilo de letra de google llamado "Poppins"*/
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 20px;
+}
+li{
+    list-style: none;
+    /*damos un espacio a los elementos*/
+    margin-right: 25px;
+}
+.primer-elemento{
+    color: pink;
+}
+/*las clases se llaman con un punto por delante*/
+.ultimo{
+    /*background: red;*/
+}
+/*los id se llaman siempre primero con #*/
+#primero{
+    /*font-size: 40px;*/
+}
+.menu{
+    /*nos permite manipular los elementos y separa mi P de las listas*/
+    display: flex;
+    /*nos permite manipular los elementos y crea un espacio llevando cada parrafo a los bordes*/
+    justify-content: space-between;
+    /*utilizamos esta propiedad para alinear los elementos en la misma altura*/
+    align-items: center;
+}
+.lista{
+    /*ponemos los elementos lado a lado*/
+    display: flex;   
+}
+
+.titular{
+    text-align: center;
+    margin-top: 200px;
+}
+h1{
+    font-size: 60px;
+    /*para quitar el margen por defecto y este aplica para los 4 tipos de margin*/
+    margin: 0;
+}
+h2{
+    font-size: 25px;
+    /*todo lo que esta abajo del h2 debe de bajar 40px, con esto bajamos el boton*/
+    margin-bottom: 40px;
+}
+
+a{
+    /*para quitar el subrayado del texto*/
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background: #5cb8ff;
+    /*espaciado interno del elemento, de igual manera tiene 4 tipos*/
+    /*20px top, 30px left, 20px bottom, 30px right*/
+    padding: 20px 30px 20px 30px;
+}
+header{
+    /*para usar imagen de fondo se recomienda 1920 de ancho x 1278 alto*/
+    background: url(recursos_pagina/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+/*iniciando la seccion para mi*/
+h3{
+text-align: center;
+font-size: 55px;
+font-weight: normal;
+
+}
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+/*modificacion en cadena*/
+.contenedor-parrafo-y-boton{
+    width: 42%;
+
+}
+.contenedor-parrafo-y-boton p{
+    font-size: 18px;
+}
+.contenedor-parrafo-final{
+    margin-bottom: 30px;
+}
+/*elementos en linea son etiquetas <a> & <img>*/
+/*elementos en bloque son etiquetas <p> ; <h1> & <li>*/
+.contenedor-parrafo-y-boton a{
+    margin-top: 20px;
+    /*estamos diciendole que aunque sea en linea tenga propiedad en block*/
+    display: inline-block;
+
+}
+.contenedor-servicios{
+    display: flex;
+    flex: wrap; /* para poder separar en bloque y luego con la siguiente clase manipulamos el tamano para poder agrupar en bloques*/
+    justify-content: space-around;
+}
+.servicio{
+    width: 25%;
+    padding: 50px 38px 50px 38px;/*el paddin suma al width*/
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.violeta{
+    background: #5055df;
+}
+.celeste{
+    background: #40a8fa;
+}
+.servicio h4{
+    font-size: 30px;
+    margin: 0; /*comprimir*/
+
+}
+.servicio img{
+    float: right;/* mover iconos a la derecha*/
+}
+.servicio p{
+    font-size: 18px;
+}
